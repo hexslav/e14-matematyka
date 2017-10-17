@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+
+</head>
+<body>
+<div id="con">
+<header><center> <img src="banner.jpg"/></center> </header>
+
+<nav>
+	Menu </br>
+	<a href="strona1.html"> -Proste działania </a> </br>
+	<a href="potegowanie.html" > -Potęgowanie </a>
+</nav>
+	
+<div id="tresc">
+	
+	<header id="header1"><h2> Proste działania </h2> </header>
+	<form name="formularz" action="dzialanie" method="post" enctype="text/plain">
+		<div>
+	Podaj pierwszą liczbę:     <input name="pierwsza"/>     </br>
+	Podaj drugą liczbę:         <input name="druga"/>   </br>
+	
+	<button type="button" onclick="odejmowanie();" name="odejmowanie"> Odejmowanie </button>
+	<button type="button" onclick="dodawanie();" name="dodawanie"> Dodawanie </button>
+	<button type="button" name="mnozenie">Mnozenie </button>
+	<button type="button" name="dzielenie">Dzielenie </button>
+	
+	
+	
+		</div>
+		</form>
+</div>
+<div id="wynik"> </div>
+<script>
+
+var button1=document.getElementById('dodawanie');
+//var liczba1 =parseint(pierwsza.value)
+var liczba2 =document.getElementById('druga');
+
+function odejmowanie(){
+//var wynik=liczba1-liczba2;
+document.getElementById("wynik").innerHTML="KURAW";
+}
+function dodawanie(x) {
+var wynik=liczba1+liczba2;
+document.getElementById("wynik").innerHTML=wynik;
+}
+
+
+
+</script>
+</body>
+</html>
