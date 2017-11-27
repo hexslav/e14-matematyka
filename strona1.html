@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+
+</head>
+<body>
+<div id="con">
+<header><center> <img src="banner.jpg"/></center> </header>
+
+<nav>
+	Menu </br>
+	<a href="strona1.html"> -Proste działania </a> </br>
+	<a href="potegowanie.html" > -Potęgowanie </a>
+</nav>
+	
+<div id="tresc">
+	
+	<header id="header1"><h2> Proste działania </h2> </header>
+		<div>
+	
+	Podaj pierwszą liczbę:     <input type="number" id="pierwsza"/>     </br>
+	Podaj drugą liczbę:         <input type="number" id="druga"/>   </br>
+	
+
+  
+	<button type="button" onclick="odejmowanie()"> Odejmowanie </button>
+	<button type="button" onclick="dodawanie()" > Dodawanie </button>
+	<button type="button" onclick="mnozenie()">Mnozenie </button>
+	<button type="button" onclick="dzielenie()">Dzielenie </button>
+	<script type="text/javascript" >
+	
+
+
+function odejmowanie(){
+
+ var jeden=Number(document.getElementById('pierwsza').value);
+	var dwa=Number(document.getElementById('druga').value);
+	var wynik = jeden-dwa;
+document.getElementById('wynik').innerHTML=wynik;
+}
+
+function dodawanie() {
+var jeden=Number(document.getElementById('pierwsza').value);
+	var dwa=Number(document.getElementById('druga').value);
+var wynik=jeden+dwa;
+document.getElementById('wynik').innerHTML=wynik;
+}
+function mnozenie() {
+var jeden=Number(document.getElementById('pierwsza').value);
+	var dwa=Number(document.getElementById('druga').value);
+var wynik=jeden*dwa;
+document.getElementById('wynik').innerHTML=wynik;
+}
+function dzielenie() {
+var jeden=Number(document.getElementById('pierwsza').value);
+	var dwa=Number(document.getElementById('druga').value);
+var wynik=jeden/dwa;
+document.getElementById('wynik').innerHTML=wynik;
+}
+</script>
+
+
+	
+		</div>
+</div>
+<div id="wynik"> </div>
+</div>
+</body>
+</html>
